@@ -2,16 +2,15 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 
 import 'package:flutter/services.dart';
-import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:jw_video_player/jwplayer.dart';
-import 'package:jw_video_player_example/get_license.dart';
 
 JWPlayerConfiguration config1 = JWPlayerConfiguration(
+  
     file:
-        "https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_ts/master.m3u8");
+        "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_20mb.mp4");
 
 void main() async {
-  await dotenv.load(fileName: ".env");
+  // await dotenv.load(fileName: ".env");
   runApp(const App());
 }
 
@@ -49,7 +48,7 @@ class _PlayerAppState extends State<PlayerApp> {
     // Platform messages may fail, so we use a try/catch PlatformException.
     // We also handle the message potentially returning null.
     try {
-      JWVideoPlayer.setLicenseKey(GetLicense.getLicense());
+      JWVideoPlayer.setLicenseKey("HfxcyW1g4Or8jf4+vVSpcYMPpULBphm4b3mbocQykiyoPlzCZTcBcTT+Sl9J6uSw");
     } catch (e) {
       debugPrint(e.toString());
     }

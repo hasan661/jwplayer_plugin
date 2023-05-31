@@ -2,8 +2,11 @@ import 'dart:async';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:jw_video_player/configuration/jwplayer_configuration.dart';
-import 'package:jw_video_player/jwplayer_platform_interface.dart';
+
+import 'configuration/jwplayer_configuration.dart';
+import 'jwplayer_platform_interface.dart';
+// import 'package:jw_video_player/configuration/jwplayer_configuration.dart';
+// import 'package:jw_video_player/jwplayer_platform_interface.dart';
 
 JWPlayerPlatform? _lastVideoPlayerPlatform;
 

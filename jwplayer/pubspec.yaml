@@ -1,8 +1,5 @@
 name: jw_video_player
 description: A flutter plugin for the JWPlayer platform.
-version: 0.0.2
-homepage: 
-repository: https://github.com/DavidPerezP124/jwplayer_plugin/tree/main
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
